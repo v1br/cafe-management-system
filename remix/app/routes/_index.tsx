@@ -57,6 +57,9 @@ export default function Index() {
         </ul>
       </div>
     </header>
+    <main>
+      
+    </main>
     </>
   );
 }
