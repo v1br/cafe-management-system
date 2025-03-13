@@ -1,0 +1,1 @@
+echo '🐶 Formatting and testing project before committing...' && cd remix && bun run check && cd .. && git add .
