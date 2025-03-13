@@ -10,7 +10,8 @@
 		"lint": "@biomejs/biome lint --write .",
 		"format": "@biomejs/biome format --write .",
 		"start": "remix-serve ./build/server/index.js",
-		"typecheck": "tsc"
+		"typecheck": "tsc",
+		"prepare": "husky"
 	},
 	"dependencies": {
 		"@biomejs/biome": "^1.9.4",

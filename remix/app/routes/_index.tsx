@@ -1,6 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 
 import Navbar from "~/components/shared/navbar";
+import { Carousel } from "~/components/ui/carousel";
 
 export const meta: MetaFunction = () => {
 	return [
@@ -93,7 +94,9 @@ export default function Index() {
 					</ul>
 				</div>
 			</header>
-			{/* <main></main> */}
+			<main>
+				<Carousel />
+			</main>
 		</>
 	);
 }

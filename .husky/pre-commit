@@ -1,1 +1,3 @@
-echo '🐶 Formatting and testing project before committing...' && cd remix && bun run check && cd .. && git add .
+#!/bin/sh
+echo "🐶 Formatting and testing project before committing..." && cd remix && bun run check && cd .. && git add .
+echo ""
