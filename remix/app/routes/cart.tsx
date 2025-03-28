@@ -85,7 +85,10 @@ export default function Cart() {
 										<h2 className="text-sm font-bold">{item.name}</h2>
 										<p className="text-sm text-gray-700">₹{item.price}</p>
 										<div className="flex items-center my-2">
-											<label className="text-sm font-medium mr-2">
+											<label
+												htmlFor={`quantity-${item.id}`}
+												className="text-sm font-medium mr-2"
+											>
 												Quantity:
 											</label>
 											<input
@@ -101,6 +104,7 @@ export default function Cart() {
 												className="bg-gray-100 px-2 py-1 rounded-md w-16"
 											/>
 											<button
+												type="button"
 												onClick={() => deleteDrink(item.id)}
 												className="ml-4 text-xs text-red-500 font-bold hover:scale-110"
 											>
@@ -120,12 +124,14 @@ export default function Cart() {
 							{/* Buttons */}
 							<div className="flex gap-4 mt-8">
 								<button
+									type="button"
 									onClick={clearCart}
 									className="lg:hidden bg-red-500 text-white px-4 py-2 rounded-md font-medium hover:bg-red-600"
 								>
 									Clear
 								</button>
 								<button
+									type="button"
 									onClick={() =>
 										alert(
 											"Thank you for placing an order!\n\n{This is a dummy alert, to be redirected to the external payment portal via backend microservice...}",
@@ -136,12 +142,14 @@ export default function Cart() {
 									Confirm
 								</button>
 								<button
+									type="button"
 									onClick={clearCart}
 									className="hidden lg:block bg-red-500 text-white px-4 py-2 rounded-md font-medium hover:bg-red-600"
 								>
 									Clear Cart
 								</button>
 								<button
+									type="button"
 									onClick={() =>
 										alert(
 											"Thank you for placing an order!\n\n{This is a dummy alert, to be redirected to the external payment portal via backend microservice...}",
