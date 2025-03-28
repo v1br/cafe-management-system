@@ -1,0 +1,1 @@
+import{n as r}from"./components-DsaIHRdB.js";import{N as a}from"./navbar-B8fM27GP.js";function t(){return r.jsxs(r.Fragment,{children:[r.jsx(a,{}),r.jsx("main",{className:"w-3/4 m-auto",children:"ABOUT"})]})}export{t as default};
