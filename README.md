@@ -49,15 +49,11 @@ tools & frameworks:
 📂 Running the project locally:
 
 ```bash
-# windows
 git clone https://github.com/v1br/cafe-management-system.git
-cd cafe-management-system
-start cafe-management-system.md
-
-# ubuntu
-git clone https://github.com/v1br/cafe-management-system.git
-cd cafe-management-system
-xdg-open cafe-management-system.md
+cd cafe-management-system/remix
+bun install
+bun run build
+bun run start
 ```
 
 ---

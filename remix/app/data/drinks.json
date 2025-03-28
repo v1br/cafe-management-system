@@ -1,0 +1,62 @@
+[
+    {
+      "id": 1,
+      "name": "Caramel Macchiato",
+      "description": "Espresso combined with vanilla-flavored syrup, milk, and caramel drizzle.",
+      "category": "Coffee",
+      "price": 220,
+      "size": ["Small", "Medium", "Large"],
+      "calories": {"Small": 150, "Medium": 250, "Large": 310},
+      "image_url": "https://starbucksstatic.cognizantorderserv.com/Items/Small/100405.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Caffè Mocha",
+      "description": "Espresso with bittersweet mocha sauce and steamed milk, topped with whipped cream.",
+      "category": "Coffee",
+      "price": 240,
+      "size": ["Small", "Medium", "Large"],
+      "calories": {"Small": 190, "Medium": 290, "Large": 370},
+      "image_url": "https://starbucksstatic.cognizantorderserv.com/Items/Small/100385.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Hot Chocolate",
+      "description": "Rich and creamy hot chocolate topped with whipped cream and chocolate drizzle.",
+      "category": "Hot Chocolate",
+      "price": 200,
+      "size": ["Small", "Medium", "Large"],
+      "calories": {"Small": 180, "Medium": 280, "Large": 350},
+      "image_url": "https://starbucksstatic.cognizantorderserv.com/Items/Small/100447.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Vanilla Latte",
+      "description": "Smooth espresso, steamed milk, and vanilla syrup for a classic taste.",
+      "category": "Coffee",
+      "price": 230,
+      "size": ["Small", "Medium", "Large"],
+      "calories": {"Small": 160, "Medium": 260, "Large": 330},
+      "image_url": "https://starbucksstatic.cognizantorderserv.com/Items/Small/100377.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Chai Tea Latte",
+      "description": "A spicy and aromatic blend of black tea, milk, and chai spices.",
+      "category": "Tea",
+      "price": 210,
+      "size": ["Small", "Medium", "Large"],
+      "calories": {"Small": 130, "Medium": 230, "Large": 290},
+      "image_url": "https://starbucksstatic.cognizantorderserv.com/Items/Small/100360.jpg"
+    },
+    {
+      "id": 6,
+      "name": "White Chocolate Mocha",
+      "description": "Espresso, steamed milk, and white chocolate sauce topped with whipped cream.",
+      "category": "Coffee",
+      "price": 250,
+      "size": ["Small", "Medium", "Large"],
+      "calories": {"Small": 200, "Medium": 320, "Large": 400},
+      "image_url": "https://starbucksstatic.cognizantorderserv.com/Items/Small/103973.jpg"
+    }
+  ]

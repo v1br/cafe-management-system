@@ -8,6 +8,7 @@ import {
 } from "@remix-run/react";
 
 import "./tailwind.css";
+import "./global.css";
 
 export const links: LinksFunction = () => [
 	{ rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -33,14 +34,14 @@ export const links: LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang="en">
+		<html lang="en" className="w-screen overflow-x-hidden">
 			<head>
 				<meta charSet="utf-8" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<Meta />
 				<Links />
 			</head>
-			<body className="h-screen bg-[#FFEFE2] text-[#40312A]">
+			<body className="h-fit min-h-screen pb-8 bg-[#FFEFE2] text-[#40312A] overflow-x-hidden overflow-y-auto">
 				{children}
 				<ScrollRestoration />
 				<Scripts />
