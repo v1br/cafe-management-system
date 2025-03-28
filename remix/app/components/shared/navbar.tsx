@@ -132,18 +132,18 @@ export default function Navbar() {
 				{suggestions.length > 0 && (
 					<div className="absolute z-10 bg-white shadow-lg rounded-md mt-2 p-2 w-full lg:w-auto">
 						{suggestions.map((drink) => (
-							<div
+							<button
 								key={drink.id}
 								className="cursor-pointer hover:bg-gray-200 p-2 rounded-md"
 								onClick={() => handleSuggestionClick(drink.name)}
 								onKeyDown={(e) => {
 									if (e.key === "Enter") handleSuggestionClick(drink.name);
 								}}
-								role="button"
+								type="button"
 								tabIndex={0}
-								>
+							>
 								{drink.name}
-							</div>
+							</button>
 						))}
 					</div>
 				)}
