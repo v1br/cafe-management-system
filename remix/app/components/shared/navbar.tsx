@@ -108,7 +108,7 @@ export default function Navbar() {
 				</li>
 				<li>
 					<Link
-						to="/"
+						to="/about"
 						className="text-sm lg:text-base font-medium hover:underline"
 						onClick={() => setIsMenuOpen(false)} // Close menu on link click
 					>
