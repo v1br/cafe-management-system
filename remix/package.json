@@ -4,6 +4,7 @@
 	"sideEffects": false,
 	"type": "module",
 	"scripts": {
+		"preinstall": "if [ \"$NODE_ENV\" = \"production\" ]; then npm config set script-prepend-npmrc=false; fi",
 		"build": "remix vite:build",
 		"dev": "remix vite:dev",
 		"check": "npx @biomejs/biome check --write .",
