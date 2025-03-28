@@ -5,7 +5,9 @@ export default function Menu() {
 	return (
 		<>
 			<Navbar />
-			<main className="w-3/4 m-auto">ABOUT</main>
+			<main className="w-3/4 m-auto">
+				
+			</main>
 		</>
 	);
 }
