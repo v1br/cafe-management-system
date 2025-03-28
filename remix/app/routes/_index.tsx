@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { useNavigate } from "@remix-run/react";
 
 import Navbar from "~/components/shared/navbar";
 import { Carousel } from "~/components/ui/carousel";
@@ -15,6 +16,13 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
+	// Create the navigate function
+	const navigate = useNavigate();
+
+	// Define the navigation logic
+	const handleClick = () => {
+		navigate("/menu");
+	};
 	return (
 		<>
 			<Navbar />
@@ -32,9 +40,10 @@ export default function Index() {
 						lightness to your drink.
 					</p>
 					<div className="flex flex-col lg:flex-row gap-4 items-center text-4xl font-bold">
-						<span>$3.40</span>
+						<span>₹291</span>
 						<button
 							type="button"
+							onClick={handleClick}
 							className="inline-flex items-center gap-2 w-fit text-base lg:text-xl font-normal py-2 px-4 bg-white rounded-full shadow hover:shadow-lg"
 						>
 							Buy Now{" "}
